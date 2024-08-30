@@ -1,0 +1,14 @@
+.button {
+  border: 1px solid $main-color;
+  padding: 4px 16px;
+  border-radius: 45px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover {
+      color: black;
+      background-color: $secondary-color;
+      border: 1px solid black;
+    }
+  }
+}
