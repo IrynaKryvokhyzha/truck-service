@@ -111,12 +111,6 @@ export default {
     align-items: center;
   }
 }
-.navigation {
-  // .navigation__container
-
-  &__container {
-  }
-}
 .menu {
   // .menu__list
 
