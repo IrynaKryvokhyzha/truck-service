@@ -1,56 +1,55 @@
 <template>
-  <div>
-    <header class="header">
-      <div
-        :class="{ 'menu__body--visible': sidebarVisible }"
-        class="navigation__container"
-      >
-        <div class="header__menu menu">
-          <div>
-            <NuxtLink to="/">
-              <NuxtImg
-                class="logo"
-                width="56px"
-                densities="1x"
-                format="webp"
-                src="/assets/images/logo.png"
-              />
-            </NuxtLink>
-            <div
-              class="menu__icon"
-              :class="{ _active: sidebarVisible }"
-              @click="showSideBar"
-            >
-              <span></span>
-            </div>
+  <header class="header">
+    <div
+      :class="{ 'menu__body--visible': sidebarVisible }"
+      class="navigation__container"
+    >
+      <div class="header__menu menu">
+        <div>
+          <NuxtLink to="/">
+            <NuxtImg
+              class="logo"
+              width="56px"
+              densities="1x"
+              format="webp"
+              src="/assets/images/logo.png"
+              alt="logo image"
+            />
+          </NuxtLink>
+          <div
+            class="menu__icon"
+            :class="{ _active: sidebarVisible }"
+            @click="showSideBar"
+          >
+            <span></span>
           </div>
-
-          <nav :class="{ _active: sidebarVisible }" class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__link">
-                <NuxtLink class="menu__item" to="/"><span>Home</span></NuxtLink>
-              </li>
-              <li class="menu__link">
-                <NuxtLink class="menu__item" to="/about"
-                  ><span>About</span></NuxtLink
-                >
-              </li>
-              <li class="menu__link">
-                <NuxtLink class="menu__item" to="/products">Products</NuxtLink>
-              </li>
-              <button class="close-menu-list" @click="showSideBar">
-                <iconify-icon icon="ri:menu-line"></iconify-icon>
-                <font-awesome-icon :icon="['fas', 'xmark']" />
-              </button>
-            </ul>
-          </nav>
-          <button>
-            <NuxtLink class="button" to="/login">Login</NuxtLink>
-          </button>
         </div>
+
+        <nav :class="{ _active: sidebarVisible }" class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__link">
+              <NuxtLink class="menu__item" to="/"><span>Home</span></NuxtLink>
+            </li>
+            <li class="menu__link">
+              <NuxtLink class="menu__item" to="/about"
+                ><span>About</span></NuxtLink
+              >
+            </li>
+            <li class="menu__link">
+              <NuxtLink class="menu__item" to="/products">Products</NuxtLink>
+            </li>
+            <button class="close-menu-list" @click="showSideBar">
+              <iconify-icon icon="ri:menu-line"></iconify-icon>
+              <font-awesome-icon :icon="['fas', 'xmark']" />
+            </button>
+          </ul>
+        </nav>
+        <button>
+          <NuxtLink class="button" to="/login">Login</NuxtLink>
+        </button>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -81,24 +80,25 @@ export default {
   padding: 10px 0;
   color: $main-color;
   position: relative;
+
   @media (min-width: $mobileSmall) {
     &::before {
       content: "";
       top: 0;
       left: 0;
-      height: 1px;
+      height: 2px;
       width: 100%;
       position: absolute;
-      border: 1px solid $main-color;
+      background-color: $main-color;
     }
     &::after {
       content: "";
       bottom: 0;
       left: 0;
-      height: 1px;
+      height: 2px;
       width: 100%;
       position: absolute;
-      border: 1px solid $main-color;
+      background-color: $main-color;
     }
   }
 

@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+a {
+  &.router-link-exact-active {
+    color: $secondary-color;
+  }
+}
+</style>
