@@ -16,7 +16,7 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 h1 {
   color: azure;
 }
@@ -24,14 +24,15 @@ h1 {
   position: relative;
   background: url(../../public/assets/images/3.jpeg) top/cover no-repeat;
   height: 100svh;
-  &::after {
-    contain: "";
+  &::before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: blanchedalmond;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
   }
   @media (max-width: $tablet) {
     //height: 100%;
@@ -42,6 +43,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
   }
 }
 .content {
@@ -49,23 +51,53 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
   align-items: flex-start;
+  gap: 50px;
+  height: 100%;
+  align-items: flex-start;
+  z-index: 10;
+
+  @media (max-width: $mobile) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: $mobileSmall) {
+    padding: 1rem 0;
+    justify-content: flex-start;
+    gap: 40px;
+  }
   &__title {
-    font-size: 86px;
+    font-size: 6rem; /* 96/16 */
     max-width: 70%;
-    @media (max-width: 1000px) {
+
+    @media (max-width: 1070px) {
+      font-size: 4.5rem; /* 72/16 */
+    }
+    @media (max-width: 850px) {
       max-width: 100%;
     }
-    // @media (max-width: 700px) {
-    //  font-size: 12px;
-    //  line-height: 1;
-    //  }
+    @media (max-width: $mobile) {
+      font-size: 4rem; /* 64/16 */
+    }
+    @media (max-width: 510px) {
+      font-size: 3.62rem; /* 58/16 */
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 2.6rem; /* 42/16 */
+    }
   }
   &__subtitle {
+    line-height: 1.5;
+    @media (max-width: $mobile) {
+      font-size: 24px;
+    }
+    @media (max-width: $mobileSmall) {
+      flex: 1 1 auto;
+    }
   }
 }
 .button {
   line-height: 2;
+  align-self: center;
+  margin-bottom: 75px;
 }
 </style>
