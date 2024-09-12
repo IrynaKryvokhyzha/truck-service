@@ -31,10 +31,13 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/icon",
     "@nuxt/image",
+    "@pinia/nuxt",
   ],
+
   googleFonts: {
     families: {
       Montserrat: true,
+      Inter: [400, 500, 800],
       display: "swap",
     },
   },
