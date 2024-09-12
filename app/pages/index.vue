@@ -1,5 +1,6 @@
 <template>
   <hero-component />
+  <skills-component />
 </template>
 
 <script setup></script>

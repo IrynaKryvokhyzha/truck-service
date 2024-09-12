@@ -3,7 +3,7 @@
     <div class="hero__container">
       <div class="content">
         <h1 class="content__title title">
-          Tent Service: Reliable PVC Tarpaulin Solutions
+          Tent Service: <span>Reliable PVC Tarpaulin Solutions</span>
         </h1>
         <h2 class="content__subtitle subtitle">
           Your trusted source for durable, custom-made PVC tarpaulins.
@@ -17,9 +17,6 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-h1 {
-  color: azure;
-}
 .hero {
   position: relative;
   background: url(../../public/assets/images/3.jpeg) top/cover no-repeat;
@@ -62,9 +59,8 @@ h1 {
     gap: 40px;
   }
   &__title {
-    font-size: 6rem; /* 96/16 */
     max-width: 70%;
-
+    color: $main-color;
     @media (max-width: 1070px) {
       font-size: 4.5rem; /* 72/16 */
     }
@@ -92,5 +88,8 @@ h1 {
   line-height: 2;
   align-self: center;
   margin-bottom: 75px;
+}
+span {
+  display: block;
 }
 </style>
