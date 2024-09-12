@@ -1,4 +1,4 @@
-$font-family: "DM Sans";
+$font-family: "Montserrat, sans-serif";
 $font-size: 16px; // де 14(px) - розмір шрифту за замовчуванням з макету
 $main-color: white; // Колір шрифту за замовчуванням
 $secondary-color: rgb(255, 183, 0);
@@ -20,9 +20,7 @@ $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поїнти
-$pc: em(
-  $containerWidth
-); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
+$pc: ($containerWidth) px; // ПК, ноутбуки, деякі планшети у горизонтальному положенні
 $tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
 $mobile: 767.98px; // Телефони L
 $mobileSmall: 479.98px; // Телефони S

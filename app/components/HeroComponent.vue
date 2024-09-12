@@ -34,9 +34,6 @@ h1 {
     background-color: rgb(0, 0, 0);
     opacity: 0.6;
   }
-  @media (max-width: $tablet) {
-    //height: 100%;
-  }
   // .hero__container
 
   &__container {
@@ -56,13 +53,12 @@ h1 {
   height: 100%;
   align-items: flex-start;
   z-index: 10;
-
   @media (max-width: $mobile) {
     padding: 1rem 2rem;
   }
   @media (max-width: $mobileSmall) {
     padding: 1rem 0;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap: 40px;
   }
   &__title {
@@ -74,9 +70,6 @@ h1 {
     }
     @media (max-width: 850px) {
       max-width: 100%;
-    }
-    @media (max-width: $mobile) {
-      font-size: 4rem; /* 64/16 */
     }
     @media (max-width: 510px) {
       font-size: 3.62rem; /* 58/16 */

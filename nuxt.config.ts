@@ -32,7 +32,12 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
   ],
-
+  googleFonts: {
+    families: {
+      Montserrat: true,
+      display: "swap",
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {
