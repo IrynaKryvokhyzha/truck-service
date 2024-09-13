@@ -12,6 +12,22 @@
     }
   }
 }
+
+.button-green {
+  border: 2px solid $secondary-color;
+  padding: 8px 16px;
+  border-radius: 45px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: $secondary-color;
+  color: black;
+  @media (any-hover: hover) {
+    &:hover {
+      color: $secondary-color;
+      background-color: transparent;
+    }
+  }
+}
 .title {
   font-size: 5rem; /* 96/16 */
   line-height: 1.2;

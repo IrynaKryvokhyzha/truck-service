@@ -8,7 +8,7 @@
         <h2 class="content__subtitle subtitle">
           Your trusted source for durable, custom-made PVC tarpaulins.
         </h2>
-        <button class="button">Schedule an appointment</button>
+        <button class="button-green">Schedule an appointment</button>
       </div>
     </div>
   </section>
