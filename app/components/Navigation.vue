@@ -76,31 +76,14 @@ export default {
 
 <style lang="scss">
 .header {
-  margin-top: 1rem;
   padding: 10px 0;
   color: $main-color;
-  position: relative;
-
-  @media (min-width: $mobileSmall) {
-    &::before {
-      content: "";
-      top: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      background-color: $main-color;
-    }
-    &::after {
-      content: "";
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      background-color: $main-color;
-    }
-  }
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $background-color;
 
   // .header__menu
 

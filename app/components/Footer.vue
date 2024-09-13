@@ -77,25 +77,9 @@ export default {
   position: relative;
   padding: 40px 0;
   color: $main-color;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 0;
-    left: 0;
-    background-color: $main-color;
-  }
-  // .footer__container
-
-  &__container {
-  }
-
-  // .footer__content
-
-  &__content {
-  }
-
+  background-color: $background-color;
+  z-index: 10;
+  overflow-x: hidden;
   // .footer__bottom
 
   &__bottom {

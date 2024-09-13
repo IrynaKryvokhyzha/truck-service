@@ -46,10 +46,15 @@ const skillsStore = useSkillsStore();
   align-items: center;
   gap: 20px;
   padding: 3rem 5rem;
-  // .content__title
-
-  &__title {
-    color: $third-color;
+  @media (max-width: $tablet) {
+    padding: 2rem 2rem;
+  }
+  @media (max-width: $mobile) {
+    padding: 1rem 0;
+    gap: 10px;
+  }
+  @media (max-width: $mobileSmall) {
+    gap: 5px;
   }
 
   // .content__skills
@@ -58,10 +63,30 @@ const skillsStore = useSkillsStore();
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px;
+    @media (max-width: $tablet) {
+      gap: 40px;
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    @media (max-width: $mobileSmall) {
+    }
   }
 }
 .title {
+  color: $third-color;
   font-size: 4rem;
+  @media (max-width: $tablet) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  @media (max-width: $mobile) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 2rem;
+  }
 }
 .skills-item {
   // .skills-item__header
@@ -69,6 +94,10 @@ const skillsStore = useSkillsStore();
   &__subtitle {
     font-weight: 800;
     max-width: 70%;
+    @media (max-width: $mobileSmall) {
+      font-size: 1.7rem;
+      max-width: 100%;
+    }
   }
 
   // .skills-item__text

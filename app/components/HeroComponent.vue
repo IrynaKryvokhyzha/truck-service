@@ -19,8 +19,10 @@
 <style lang="scss" scoped>
 .hero {
   position: relative;
-  background: url(../../public/assets/images/3.jpeg) top/cover no-repeat;
-  height: 100svh;
+  background: url(../../public/assets/images/background.jpg) center/cover
+    no-repeat;
+  height: 100%;
+
   &::before {
     content: "";
     position: absolute;
@@ -28,7 +30,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     opacity: 0.6;
   }
   // .hero__container
@@ -41,20 +43,20 @@
   }
 }
 .content {
-  padding: 2rem 5rem;
+  padding: 6rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 50px;
+  gap: 20px;
   height: 100%;
   align-items: flex-start;
   z-index: 10;
   @media (max-width: $mobile) {
-    padding: 1rem 2rem;
+    padding: 4rem 2rem;
   }
   @media (max-width: $mobileSmall) {
-    padding: 1rem 0;
+    padding: 3rem 0;
     justify-content: space-around;
     gap: 40px;
   }
@@ -86,8 +88,7 @@
 }
 .button {
   line-height: 2;
-  align-self: center;
-  margin-bottom: 75px;
+  //align-self: center;
 }
 span {
   display: block;
