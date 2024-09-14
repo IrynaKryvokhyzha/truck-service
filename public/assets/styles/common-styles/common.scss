@@ -21,6 +21,8 @@
   transition: all 0.3s ease;
   background-color: $secondary-color;
   color: black;
+  font-weight: 600;
+
   @media (any-hover: hover) {
     &:hover {
       color: $secondary-color;
@@ -39,6 +41,7 @@
 .subtitle {
   font-size: 2.25rem; /* 36/16 */
   font-weight: 500;
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }

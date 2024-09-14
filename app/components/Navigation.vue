@@ -36,7 +36,9 @@
               >
             </li>
             <li class="menu__link">
-              <NuxtLink class="menu__item" to="/products">Products</NuxtLink>
+              <NuxtLink class="menu__item" to="/products"
+                ><span>Products</span>
+              </NuxtLink>
             </li>
             <button class="close-menu-list" @click="showSideBar">
               <iconify-icon icon="ri:menu-line"></iconify-icon>

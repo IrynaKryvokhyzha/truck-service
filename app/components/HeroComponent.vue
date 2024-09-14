@@ -78,6 +78,7 @@
   }
   &__subtitle {
     line-height: 1.5;
+    color: #f3fede;
     @media (max-width: $mobile) {
       font-size: 24px;
     }

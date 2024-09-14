@@ -2,6 +2,7 @@
   <div class="home-section">
     <hero-component />
     <skills-component />
+    <our-products />
   </div>
 </template>
 
