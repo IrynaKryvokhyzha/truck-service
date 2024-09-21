@@ -33,6 +33,7 @@ const skillsStore = useSkillsStore();
 <style lang="scss" scoped>
 .about {
   background-color: $secondary-color;
+  opacity: 0.8;
   // .about__container
 
   &__container {

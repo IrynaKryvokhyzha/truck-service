@@ -124,7 +124,7 @@ const productsStore = useOurProductsStore();
   // .item__text
 
   &__text {
-    color: #f3fede;
+    color: $light-color;
   }
 }
 .item-number {

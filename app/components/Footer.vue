@@ -5,13 +5,22 @@
         <div class="content__location">
           <h2>Our Location</h2>
           <p class="address">
-            <a href="#">Ukraine, Chernivtsi city, st. Khotynska 41</a>
+            <a
+              href="https://maps.app.goo.gl/HAGGDnXhPDPkK49S7"
+              target="_blank"
+              rel="noopener"
+              aria-label="Location on Google Maps"
+              >Ukraine, Chernivtsi city, st. Khotynska 41</a
+            >
           </p>
         </div>
         <div class="content__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="https://www.facebook.com/tentservicing/">
+              <a
+                href="https://www.facebook.com/tentservicing/"
+                aria-label="Facebook"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -25,7 +34,7 @@
               ></a>
             </li>
             <li class="social__item">
-              <a href="mailto:Wakry@ukr.net">
+              <a href="mailto:Wakry@ukr.net" aria-label="Email">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -40,7 +49,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="viber://chat?number=380503743129">
+              <a href="viber://chat?number=380503743129" aria-label="Viber">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -55,7 +64,6 @@
                   /></svg
               ></a>
             </li>
-            <li class="social__item"></li>
           </ul>
         </div>
       </div>
@@ -66,11 +74,7 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .footer {

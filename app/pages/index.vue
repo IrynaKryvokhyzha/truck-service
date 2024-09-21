@@ -3,6 +3,7 @@
     <hero-component />
     <skills-component />
     <our-products />
+    <truck-covers />
   </div>
 </template>
 
